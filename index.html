@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohini Tiwari – Full Stack Developer</title>
+    <meta name="description" content="Rohini Tiwari is a Full Stack Developer specializing in scalable web applications, secure backend systems, and modern frontend experiences using React, Node.js, and PostgreSQL." />
+    <meta name="keywords" content="Rohini Tiwari, Full Stack Developer, React, Node.js, PostgreSQL, Web Developer, Software Engineer" />
+    <meta name="author" content="Rohini Tiwari" />
+    <meta property="og:title" content="Rohini Tiwari – Full Stack Developer" />
+    <meta property="og:description" content="Building scalable web applications with secure backend systems and modern frontend experiences." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rohini Tiwari – Full Stack Developer" />
+    <meta name="twitter:description" content="Building scalable web applications with secure backend systems and modern frontend experiences." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+    <script>
+      // Initialize theme before page loads to prevent flash
+      (function() {
+        const stored = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.classList.add(theme);
+      })();
+    </script>
+  </head>
+  <body class="bg-[var(--bg-primary)] text-[var(--text-primary)] transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
